@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abigail Hechmer Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- link google font CSS-->
+    <link href='https://fonts.googleapis.com/css?family=Josefin Sans' rel='stylesheet'>
+    <!-- link font awesome logos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- link swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" /> 
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="left">
+                <a href="#about-section">Abigail Hechmer</a>
+            </div>
+            <div class="right">
+                <a href="#about-section">About</a>
+                <a href="#skills-section">Skills</a>
+                <a href="#projects-section">Projects</a>
+            </div>
+        </nav>
+    </header>
+    <section id="greeting-section">
+        <h2>Hello World!</h2>
+    </section>
+    <section id="about-section">
+        <div class="headshot">
+            <picture>
+                <img src="images\headshot.png" alt="Abigail Headshot">
+            </picture>
+        </div>
+        <div class="bio">
+            <p>
+                Hello! I'm Abby, a student at SNHU studying Computer Science with a concentration in Software Engineering who's passionate about software development and UI/UX design.
+                I'm proficient in C++, Python, Java, and SQl and eager to continue grow my skills and continue my path of learning even after graduation.
+            </p>
+            <br>
+            <p>
+                Alongside software development, I enjoy painting, reading, baking, and gaming!
+            </p>
+        </div>
+        <div class="social-links">
+            <!-- add in linkedin link at later date -->
+            <!-- <a href="" target="_blank">
+                <i class="fa-brands fa-linkedin"></i>
+            </a> -->
+            <a href="https://github.com/a-hech" target="_blank">
+                <i class="fa-brands fa-github"></i>
+            </a>
+        </div>
+    </section>
+
+    <div class="divider"></div>
+    <section id="skills-section">
+        <h2>My Skills</h2>
+        <div class="skills-container">
+            <i class="fa-brands fa-python"></i>
+            <i class="fa-brands fa-java"></i>
+            <i class="fa-brands fa-figma"></i>
+            <i class="fa-solid fa-database"></i>
+        </div>
+    </section>
+    <div class="divider"></div>
+
+    <div class="divider"></div>
+    <section id="projects-section">
+
+        <h2>My Work</h2>
+
+        <div class="capstone-subsection">
+            <h3>Capstone Work</h3>
+            <div #swiperRef="" class="swiper card-swiper">
+                <div class="swiper-wrapper">
+                    <!--<div class="swiper-slide">
+                         <a href="https://github.com/a-hech/Self-Assessment" target="_blank" class="project-box">
+                            <picture>
+                                <img src="images\selfAssessment.png" alt="Self Assessment">
+                             </picture>
+                            <h4>Professional Self Assessment</h4>
+                            <p>This is a written professional self-assessment detailing the work I've completed and content I've learned for my degree.</p>
+                        </a>
+                    </div> -->
+                    <div class="swiper-slide">
+                        <a href="https://youtu.be/cwKpuRH64Pg" target="_blank" class="project-box">
+                            <picture>
+                                <img src="images\codeReview.png" alt="Code Review">
+                            </picture>
+                            <h4>Code Review</h4>
+                            <p>A video of my code review. The code review goes into depth about the original Track It, Contact List, and Game Sales Ranked projects and explains the enhancements I made to the new versions.</p>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="https://github.com/a-hech/Narratives" target="_blank" class="project-box">
+                            <picture>
+                                <img src="images\narratives.png" alt="Narratives">
+                            </picture>
+                            <h4>Written Narratives</h4>
+                            <p>These are written works explaining each original project in-depth and the changes that were made to enhance it.</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- project section -->
+        <div class="project-subsection">
+            <h3>Software Projects</h3>
+            <div #swiperRef="" class="swiper card-swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <a href="https://github.com/a-hech/Track-It" target="_blank" class="project-box">
+                            <picture>
+                                <img src="images\trackIt.png" alt="Track It">
+                            </picture>
+                            <h4>Track It!</h4>
+                            <h5><em>Java to Kotlin</em></h5>
+                            <p>Track It! Is an Android event tracking app, originally built with Java then reimagined and redesigned with Kotlin.</p>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="https://github.com/a-hech/ContactList" target="_blank" class="project-box">
+                            <picture>
+                                <img src="images\contactList.png" alt="Contact List">
+                            </picture>
+                            <h4>Contact List</h4>
+                            <h5><em>Java to C++</em></h5>
+                            <p>Contact List is a C++ program that uses a vector to add, display, update, and delete user-input contacts.</p>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="https://github.com/a-hech/GameSalesRanked" target="_blank" class="project-box">
+                            <picture>
+                                <img src="images\gameSalesRanked.png" alt="Game Sales Ranked">
+                            </picture>
+                            <h4>Game Sales Ranked</h4>
+                            <h5><em>Python, pymongo, plotly, dash</em></h5>
+                            <p>Game Industry Ranked uses pymongo to access a database of game industry statistics and displays the data in a readable format using plotly and dash.</p>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination-bullet"></div>
+
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Swiper JS -->
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            // Initialize Swiper
+            const swiper = new Swiper(".card-swiper", {
+                centeredSlides: false,
+                spaceBetween: 0,
+                slidesPerView: 3,
+
+
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+            });
+        });
+    </script>
+</body>
+</html>
